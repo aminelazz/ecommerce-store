@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar"
 
 import "./globals.css"
 import { ModalProvider } from "@/providers/modal-provider"
+import { ToastProvider } from "@/providers/toast-provider"
 
 const urbanist = Urbanist({ subsets: ["latin"] })
 
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={nunito.className}>
         <ModalProvider />
+        <ToastProvider />
         <Navbar />
         {children}
         <Footer />
