@@ -59,6 +59,7 @@ function Summary() {
         </div>
       </div>
       <Button
+        disabled={items.length === 0}
         onClick={onCheckout}
         className="w-full mt-6"
       >
